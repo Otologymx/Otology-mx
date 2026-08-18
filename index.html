@@ -2,11 +2,39 @@
 <html lang="es-MX">
 <head>
   <meta charset="utf-8" />
-  <script>document.documentElement.classList.add("js");</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Otology MX | Oído · Nariz · Garganta</title>
-  <meta name="description" content="Otology MX. Consulta de otorrinolaringología para adultos y niños en Xochimilco, CDMX. Atención de oído, nariz y garganta, procedimientos en consultorio y cirugía." />
+  <title>Otology MX | Otorrinolaringología en CDMX</title>
+  <meta name="description" content="Consulta de otorrinolaringología para adultos y niños en CDMX. Atención de oído, nariz y garganta, procedimientos en consultorio y cirugía." />
   <meta name="theme-color" content="#0D1B3D" />
+  <link rel="canonical" href="https://www.otology.mx/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Otology MX" />
+  <meta property="og:title" content="Otology MX | Otorrinolaringología en CDMX" />
+  <meta property="og:description" content="Consulta para adultos y niños en CDMX. Atención de oído, nariz y garganta, procedimientos en consultorio y cirugía." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.otology.mx/" />
+  <meta property="og:image" content="https://www.otology.mx/otology-social.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Otology MX | Otorrinolaringología en CDMX" />
+  <meta name="twitter:description" content="Consulta para adultos y niños en CDMX. Atención de oído, nariz y garganta, procedimientos en consultorio y cirugía." />
+  <meta name="twitter:image" content="https://www.otology.mx/otology-social.png" />
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Otology MX",
+    "alternateName": "Otology MX",
+    "url": "https://www.otology.mx/"
+  }</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -276,9 +304,8 @@
     .footer-bottom { border-top: 1px solid var(--line); padding-top: 22px; color: #98A2B3; font-size: .82rem; display: flex; justify-content: space-between; gap: 20px; }
 
     /* Reveal */
-    .reveal { opacity: 1; transform: none; }
-    .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
-    .js .reveal.visible { opacity: 1; transform: none; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
 
     @media (max-width: 1040px) {
       .nav { display: none; position: absolute; left: 20px; right: 20px; top: 80px; flex-direction: column; align-items: stretch; gap: 0; background: white; border: 1px solid var(--line); border-radius: 18px; padding: 10px; box-shadow: var(--shadow); }
@@ -510,7 +537,7 @@
         <div class="section-heading reveal">
           <div class="eyebrow">Ubicaciones</div>
           <h2>Elige la sede que mejor te convenga.</h2>
-          <p class="lead">Consulta en Xochimilco, CDMX. Cambia de sede para consultar la ubicación y abrir indicaciones en Google Maps.</p>
+          <p class="lead">Consulta en CDMX. Cambia de sede para consultar la ubicación y abrir indicaciones en Google Maps.</p>
         </div>
 
         <div class="locations-shell reveal">
@@ -518,6 +545,7 @@
             <div class="tabs" role="tablist" aria-label="Sedes de Otology MX">
               <button class="location-tab active" id="tab-san-gregorio" role="tab" aria-selected="true" data-location="san-gregorio">San Gregorio</button>
               <button class="location-tab" id="tab-vaqueritos" role="tab" aria-selected="false" data-location="vaqueritos">Vaqueritos</button>
+              <button class="location-tab" id="tab-pantitlan" role="tab" aria-selected="false" data-location="pantitlan">Pantitlán</button>
             </div>
             <div class="location-label">Otology MX</div>
             <h3 id="locationTitle">Otology MX · San Gregorio</h3>
@@ -601,6 +629,14 @@
         directions: 'https://maps.app.goo.gl/EUGPFUku8XmPREHN8',
         map: 'https://www.google.com/maps?q=Felipe%20%C3%81ngeles%2026%2C%20Int.%2011%2C%20San%20Lorenzo%20la%20Cebada%2C%20Xochimilco%2C%20CDMX&output=embed',
         mapTitle: 'Mapa de Otology MX Vaqueritos'
+      },
+      'pantitlan': {
+        title: 'Otology MX · Pantitlán',
+        hospital: 'Torre Médica Santa Anita',
+        address: 'Cda. Porfirio Díaz 15, Juárez Pantitlán, 57465 Cdad. Nezahualcóyotl, Méx.',
+        directions: 'https://maps.app.goo.gl/tjXe2z3LoUnqV6Jh7',
+        map: 'https://www.google.com/maps?q=Cda.%20Porfirio%20D%C3%ADaz%2015%2C%20Ju%C3%A1rez%20Pantitl%C3%A1n%2C%2057465%20Cdad.%20Nezahualc%C3%B3yotl%2C%20M%C3%A9x.&output=embed',
+        mapTitle: 'Mapa de Otology MX Pantitlán'
       }
     };
 
@@ -626,20 +662,15 @@
       map.title = item.mapTitle;
     }));
 
-    const revealElements = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealElements.forEach(el => observer.observe(el));
-    } else {
-      revealElements.forEach(el => el.classList.add('visible'));
-    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
